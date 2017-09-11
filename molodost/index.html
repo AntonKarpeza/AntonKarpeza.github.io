@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		a{
+			display: block;
+			text-decoration: none;
+			padding: 10px;
+			border: 1px solid blue;
+			width: 150px;
+			text-align: center;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+<a href="javascript:(function(){
+	alert('Gold: ' + document.getElementsByClassName('nowrap')[0].innerHTML);
+}())">Boormarklet</a>
+<ol>
+	<li>Если нам нужна точная информация о посищении,<br>
+		то я бы предпочёл использовать счётчик страниц вместо счётчика хитов.
+		<br>10 млн в сутки - это очень большое число, которое не показывает конкретную активность порльзователей. </li>
+	<li>-</li>
+	<li>-</li>
+	<li>a) Использование фреймворков. Не стоит создавать велосипеды.<br>
+		b) Использование препроцессоров.<br>
+		c) Использование сборщиков(gulp и т.д.) или байндлеров(webpack и т.д.).<br>
+		d) При разработке больших сайтов использовать паттерн MVC. Немаловажным фактором будет добавление уровней абстракции баз данных.<br> При это задействовать модульное тестирование основных элементов.
+	</li>
+</ol>
+</body>
+</html>
