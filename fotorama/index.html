@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fotorama</title>
+	<link rel="stylesheet" href="fotorama.css">
+	<style>
+		body{
+			background-color: lightsteelblue;
+		}
+		#foto-rama{
+			text-align: center;
+			margin: 40px auto;
+			min-width: 320px;
+			max-width: 600px;
+			background-color: lightsteelblue;
+		}
+		.fotorama__arr--next{
+			background: url("icons/next.png") no-repeat center;
+		}
+		.fotorama__arr--next:hover{
+			opacity: 0.6;
+		}
+		.fotorama__arr--prev{
+			background: url("icons/prew.png") no-repeat center;
+		}
+		.fotorama__arr--prev:hover{
+			opacity: 0.6;
+		}
+		.fotorama__fullscreen-icon{
+			background: url("icons/full_s.png") no-repeat center;
+		}
+		.fotorama__fullscreen-icon:hover{
+			opacity: 0.6;
+		}
+	</style>
+</head>
+<body>
+
+<div id="foto-rama" >
+	<div class="my-fotorama">
+
+	</div>
+</div>
+
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="fotorama.js"></script>
+<script>
+    $( document ).ready(function() {
+			$(".my-fotorama").fotorama({
+				 width: 600,
+				 minwidth: 320,
+		  		 minheight: 600,
+		  		 allowfullscreen: true,
+		  		 margin: 5,
+             navwidth: 400,
+		  		 fit: 'cover',
+		  		 nav: 'thumbs',
+		  		 loop: true,
+             arrows: true,
+             autoplay: 1500,
+		  		 data:[
+					  {img: 'img/1.jpg', thumb: '1-thumb.jpg'},
+					  {img: 'img/2.jpg', thumb: '2-thumb.jpg'},
+					  {img: 'img/3.jpg', thumb: '3-thumb.jpg'},
+					  {img: 'img/4.jpg', thumb: '4-thumb.jpg'},
+					  {img: 'img/5.jpg', thumb: '5-thumb.jpg'},
+					  {img: 'img/6.jpg', thumb: '6-thumb.jpg'},
+					  {img: 'img/7.jpg', thumb: '7-thumb.jpg'},
+					  {img: 'img/8.jpg', thumb: '8-thumb.jpg'},
+					  {img: 'img/9.jpg', thumb: '9-thumb.jpg'},
+					  {img: 'img/10.jpg', thumb: '10-thumb.jpg'}
+					]
+			})
+    });
+</script>
+</body>
+</html>
