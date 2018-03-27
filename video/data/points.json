@@ -1,0 +1,12 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.79414895041432, 37.69663060223159]}, "properties": {"balloonContent": "video/1.webm", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки", "iconCaption": "остановка 1"}, "options": {"preset": "islands#blueGovernmentCircleIcon"}},
+    {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.79078820021951, 37.68465722118909]}, "properties": {"balloonContent": "video/2.webm", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки", "iconCaption": "памятник"}, "options": {"preset": "islands#blueGovernmentCircleIcon"}},
+    {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.785855348844564, 37.683820371976466]}, "properties": {"balloonContent": "video/3.webm", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки", "iconCaption": "остановка 2"}, "options": {"preset": "islands#blueGovernmentCircleIcon"}},
+    {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [55.7831226660953, 37.69465649639663]}, "properties": {"balloonContent": "video/1.webm", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки", "iconCaption": "памятник"}, "options": {"preset": "islands#blueGovernmentCircleIcon"}},
+    {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [55.77477832865432, 37.6837559989601]}, "properties": {"balloonContent": "video/2.webm", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки", "iconCaption": "площадь"}, "options": {"preset": "islands#blueGovernmentCircleIcon"}},
+    {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [55.765246658549565, 37.68620217358164]}, "properties": {"balloonContent": "video/3.webm", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки", "iconCaption": "памятник"}, "options": {"preset": "islands#blueGovernmentCircleIcon"}},
+    {"type": "Feature", "id": 7, "geometry": {"type": "Point", "coordinates": [55.76340779299976, 37.67744744335704]}, "properties": {"balloonContent": "video/1.webm", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки", "iconCaption": "остановка 3"}, "options": {"preset": "islands#blueGovernmentCircleIcon"}}
+  ]
+}

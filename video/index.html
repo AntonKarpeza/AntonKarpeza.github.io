@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="owl/owl.carousel.css" rel="stylesheet">
+	<link href="owl/owl.theme.default.css" rel="stylesheet">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+
+	<script src="owl/owl.carousel.js" type="text/javascript"></script>
+
+	<script src="main2.js" type="text/javascript"></script>
+	<style type="text/css">
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		//font-family: Arial;
+			font-size: 14px;
+		}
+
+		#map {
+			width: 60%;
+			height: 100%;
+			display: inline-block;
+			float: left;
+		}
+
+		#slider{
+			width: 40%;
+			float: left;
+			background-color: lightgray;
+			position: relative;
+		}
+
+		.menu {
+			position: absolute;
+			width: 12em;
+			background: white;
+			border: 1px solid #ccc;
+			border-radius: 12px;
+			padding-bottom: 10px;
+			z-index: 2
+		}
+		.menu ul {
+			list-style-type: none;
+			padding: 20px;
+			margin: 0;
+		}
+		input {
+			width: 150px;
+			margin: 0 auto 10px auto;
+			display: block;
+		}
+
+
+		#first{
+			height: 500px;
+			background-color: lightgray;
+		}
+		.item{
+			height: 460px;
+			background-color: cornflowerblue;
+			margin: 0 30px;
+		}
+
+		#content-video{
+			height: 500px;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 1000;
+			background-color: lightgray;
+			display: none;
+		}
+
+
+
+
+	</style>
+
+</head>
+<body>
+<div id="map"></div>
+
+<input type="button"  id="destroyButton" value="Перезагрузить карту"/>
+<input type="button"  id="startButton" value="Старт"/>
+
+
+<div id="slider">
+
+	<!--  FIRST -->
+	<section id="first">
+		<div class="owl-carousel owl-theme" id="owl-first">
+			<div class="item">
+				<h4>1</h4>
+			</div>
+			<div class="item">
+				<h4>2</h4>
+			</div>
+			<div class="item" data-hash="owf-third">
+				<h4>3</h4>
+			</div>
+			<div class="item">
+				<h4>4</h4>
+			</div>
+			<div class="item">
+				<h4>5</h4>
+			</div>
+			<div class="item">
+				<h4>6</h4>
+			</div>
+			<div class="item">
+				<h4>7</h4>
+			</div>
+			<div class="item">
+				<h4>8</h4>
+			</div>
+			<div class="item">
+				<h4>9</h4>
+			</div>
+			<div class="item">
+				<h4>10</h4>
+			</div>
+			<div class="item">
+				<h4>11</h4>
+			</div>
+			<div class="item">
+				<h4>12</h4>
+			</div>
+		</div>
+
+	</section>
+
+	<video id="content-video"  type="video/webm" autoplay></video>
+
+</div>
+
+
+</body>
+</html>
