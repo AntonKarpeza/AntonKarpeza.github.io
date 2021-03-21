@@ -212,19 +212,15 @@
                 input_node = input.get(0),
                 start = input_node.selectionStart,
                 end = input_node.selectionEnd;
-
             var max_length = $(input).attr("maxlength");
-            if (start == end && end == val.length) {
-                if (!max_length || val.length < max_length) {
-                    input.val(val + key);
-                }
-            } else {
-                var new_string = this.insertToString(start, end, val, key);
-                input.val(new_string);
-                start++;
-                end = start;
-                input_node.setSelectionRange(start, end);
-            }
+            
+            if (max_length && val.length == max_length && start == end) return; 
+            
+            var new_string = this.insertToString(start, end, val, key);
+            input.val(new_string);
+            start++;
+            end = start;
+            input_node.setSelectionRange(start, end);
 
             input.trigger('focus');
 
@@ -235,9 +231,20 @@
 
         backspace: function () {
             var input = this.settings.input,
-                val = input.val();
-
-            input.val(val.substr(0, val.length - 1));
+                val = input.val(),
+                input_node = input.get(0),
+                start = input_node.selectionStart,
+                end = input_node.selectionEnd;
+            
+            if (start == end) {
+                if (!start) return;
+                start--;
+            }
+            var new_string = this.insertToString(start, end, val, '');
+            input.val(new_string);
+            end = start;
+            input_node.setSelectionRange(start, end);
+            input.trigger('focus');
         },
 
         toggleShiftOn: function () {
